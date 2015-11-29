@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="es">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Rubén Pardo PLE</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<link rel="stylesheet" href="css/styles.css">
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Rubén PLE</h1>
+					<h3>Aprendizaje y desarrollo de la informática 2015</h3>
+					<p>
+						<small>Created by <a href="http://rubenpardomilla.com">Rubén Pardo</a> / <a href="http://twitter.com/rubenpardomilla">@Ruben</a></small>
+					</p>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>¿Qué hay en mi PLE?</h2>
+						<p>Gente en quien confío o el gran público son mi filtro.</p>
+						<p>Lo primero que debes aprender explotando recursos en la web es que debes ser <strong> desconfiado sistemáticamente</strong>.</p>
+						<p>Tener claras tus fuentes de confianza es clave, tanto virtualmente como en el mundo real.</p>
+					</section>
+					<section>
+						<img height="100" src="https://www.redditstatic.com/about/assets/reddit-logo.png" >
+						<p>Es un agredor de links que so pondera por votaciones de usuarios.</p>
+						<p>Incluyes miles de filtros: temporales, popularidad, controversía, etcétera.</p>
+						<p>El subreddit <a href="https://www.reddit.com/r/programming/">programming</a> es el alpha y el beta de cualquier informático.</p>
+					</section>
+					<section data-background="https://media.giphy.com/media/sWEZefiHEtdPW/giphy.gif">
+						<h2>Wikipedia</h2>
+						<p>¿De verdad no es fiable? Sí, más incluso que las fuentes tradicionales (Larouse, etcétera) gracias a las referencias y las discusiones.</p>
+						<p>Contiene todo lo que necesites en el peor de los casos en un link.</p>
+						<p>Los artículos relacionados son toda una aventura.</p>
+					</section>
+					<section data-background="https://media.giphy.com/media/iHgznkhwC6XYs/giphy.gif">
+						<h2>Friendship</h2>
+						<p>Mi muro de twitter contiene gran parte de lo que pueda llegar interesar filtrado a mi gusto.</p>
+						<p>Los retweets enriquecen mi muro y posibilitan la entrada de un nuevo follower.</p>
+						<p>Porqué no Whatsapp, Facebook y cualquier otra red social donde tengas a tus amigos, puede suponer una fuente de información infinita.</p>
+					</section>
+					<section>
+						<h2>Chrome bookmarks</h2>
+						<p>¿Por qué no?</p>
+						<p>Se sincronizan.</p>
+						<p>Están siempre muy a mano.</p>
+						<p>Es sencillo compartirlos.</p>
+						<p>Forman parte de tu día a día visualmente.</p>
+						<img width="100" height="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Google_Chrome_icon_(2011).svg/2000px-Google_Chrome_icon_(2011).svg.png">
+					</section>
+					<section>
+						<h2>Personal webpage</h2>
+						<p>Escribir (aunque se mal, como yo) es un ejercicio muy sano.</p>
+						<p>A la vez que haces cosas las documentas.</p>
+						<p>Puedes crear tu propia página de "links de interes" o algo parecido.</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>Esquema general</h2>
+					<div id="ple-grid">
+						<div class='box'>
+							<a href="https://www.reddit.com/">
+								<img width="100%" src="https://www.redditstatic.com/about/assets/reddit-logo.png" >
+							</a>
+						</div>
+						<div class='box'>
+							<a href="https://www.wikipedia.org/">
+								<img max-width="100%" src="https://cdn1.iconfinder.com/data/icons/simple-icons/4096/wikipedia-4096-black.png" >
+							</a>
+						</div>
+		                <div class='box'>
+							<a href="https://twitter.com/">
+								<img width="100" src="css/twitter-512.png" >
+							</a>
+						</div>
+		                <div class='box'>
+							<img width="100" src="http://uxrepo.com/static/icon-sets/zocial/svg/chrome.svg" >
+		                </div>
+		                <div class='box'>
+		                	<a href="https://rubenpardomilla.wordpress.com/links-de-interes/">
+								<img width="100" src="http://uxrepo.com/static/icon-sets/brandico/svg/wordpress.svg" >
+							</a>
+						</div>
+                	</div>
+				</section>
+			</div>
+		</div>		
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="js/mason.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+				]
+			});
+
+			$("#ple-grid").mason({
+			    itemSelector: '.box',
+			    ratio: 1.2,
+			    sizes: [
+			        [1,1],
+			        [2,1],
+			        [1,2]
+			    ],
+			    columns: [
+			        [0, 480, 3],
+			        [480, 1920, 5]
+			    ],
+			    filler: {
+			        itemSelector: '.filler',
+			        filler_class: 'mason-filler'
+			    },
+			    gutter: 5,
+			    layout: 'fluid'
+			});
+
+		</script>
+
+	</body>
+</html>

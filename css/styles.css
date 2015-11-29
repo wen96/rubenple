@@ -1,0 +1,12 @@
+
+
+.box {
+  position: relative;
+  float: left;
+  background-color: #039be5;
+  color: #fff;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  vertical-align: center;
+}
